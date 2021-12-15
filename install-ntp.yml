@@ -28,3 +28,9 @@
 
       - name: validando estatus chrnonyd
         command: 'chronyc tracking'
+        register: resultado
+      
+      - debug: 
+          var: resultado.stdout_lines
+        
+        

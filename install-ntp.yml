@@ -1,0 +1,14 @@
+---
+- name: configurando NTP
+  hosts: host1.demo.com
+  tasks:
+      - name: instalando chrony
+        yum:
+          name: chrony
+          state: present
+
+      - name: iniciando servicio chronyd
+        service:
+          name: chronyd
+          state: started
+          enable: yes

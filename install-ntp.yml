@@ -27,4 +27,4 @@
           state: restarted
 
       - name: validando estatus chrnonyd
-        command: 'chronyc tracking
+        command: 'chronyc tracking'
